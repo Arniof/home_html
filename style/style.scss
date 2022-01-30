@@ -122,7 +122,11 @@ main {
     background-image: url(../img/accesories.png);
   }
   .feature-products-wrap {
+      padding-left: 0;
       display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
   }
   .card {
     outline: 1px solid red;
@@ -162,6 +166,15 @@ main {
 .advantages {
     background-color: #222;
     color: #fff;
+}
+.feedback {
+    background-color: #f4f4f4;
+    background-image: url(../img/feedback-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    padding-top: 100px;
+    padding-bottom: 155px;
 }
 .footer {
     background-color: #222;
