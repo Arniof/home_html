@@ -5,6 +5,16 @@
 }
 body {
     font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -99999px;
+    margin: -1px;
 }
 .wrap {
     width: 1140px;
@@ -42,7 +52,9 @@ body {
 .registry-link {
     margin: 0 33px;
 }
-
+main {
+    flex-grow: 1;
+}
 .promo {
     background-color: #F1E4E6;
 }
@@ -108,6 +120,46 @@ body {
     height: 180px;
     margin-top: 20px;
     background-image: url(../img/accesories.png);
+  }
+  .card {
+    outline: 1px solid red;
+    width: 360px;
+    margin: 20px;
+    background: #F8F8F8;
+    overflow: hidden;
+  }
+  .card__box {
+    padding: 20px;
+  }
+  
+  
+  .card__image {
+    position: relative;
+  }
+  .card__img {
+    display: block;
+  }
+  .card__overlay {
+    background: rgba(58, 56, 56, 0.86);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* opacity: 0; */ 
+    transition: 0.4s;
+    transform: translateX(100%);
+  }
+  
+  .card:hover .card__overlay {
+     /* opacity: 1; */ 
+      transform: translateX(0%);
   }
 .advantages {
     background-color: #222;
