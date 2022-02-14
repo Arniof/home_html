@@ -270,8 +270,13 @@ main {
   }
   .feature-products{
     margin-top: 60px;
+    margin-bottom: 95px;
+    @media (max-width: 768px) {
+      margin-bottom: 64px;
+    }
     @media (max-width: 425px) {
       margin-top: 0;
+      margin-bottom: 90px;
       }
   }
   .feature-products-wrap {
@@ -358,9 +363,59 @@ main {
   .card__price {
     color: $main-color;
   }
+  .feature_products_Btn {
+    border: 1px solid #ff6a6a;
+    margin-top: 48px;
+    padding: 15px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: none;
+    color: #f26376;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.feature_products_Btn:hover {
+    color: white;
+    background: #ff6a6a;
+}
 .advantages {
     background-color: #222;
     color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.advantages-wrap {
+   
+    display: grid;
+    
+    gap: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+   @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+.advantege_unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.advantege_title {
+    font-size: 19.96px;
+    line-height: 24px;
+    margin-top: 27px;
+    margin-bottom: 15px
+}
+.advantege_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    max-width: 340px;
 }
 .feedback {
     background-color: #f4f4f4;
@@ -370,6 +425,74 @@ main {
     background-position: left bottom;
     padding-top: 100px;
     padding-bottom: 155px;
+}
+.feedback-wrap {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.feedback_review {
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding-bottom: 48px;
+  }
+}
+.feedback_review_text {
+  margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222224;
+    max-width: 330px;
+}
+.feedback_overlook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback_overlook_title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+}
+.feedback_overlook_text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+  padding-bottom: 32px;
+}
+.feedback_overlook_form {
+  height: 49px;
+  display: flex;
+}
+.subscribe-field {
+	padding: 20px;
+	background-color: lightgrey;
+	border: none;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	color: blue;
+}
+.subscribe-field::placeholder {
+	color: #222;
+	font-family: 'Lato', sans-serif;
+}
+
+.subscribe-btn {
+	padding: 20px;
+	background-color: #D73C3C;;
+	border: none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: #fff;
 }
 .footer {
     background-color: #222;
