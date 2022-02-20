@@ -1,0 +1,18 @@
+$main-color:#F16D7F;
+$alter-color: #FFFFFF;
+@mixin white-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $alter-color;
+}
+@mixin rose-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $main-color;
+}

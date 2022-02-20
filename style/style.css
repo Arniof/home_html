@@ -375,7 +375,7 @@ main {
   }
 }
 
-.feature-products-wrap {
+.feature_products_wrap {
   padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,7 +389,7 @@ main {
 }
 
 @media (max-width: 768px) {
-  .feature-products-wrap {
+  .feature_products_wrap {
     gap: 12px;
   }
 }
