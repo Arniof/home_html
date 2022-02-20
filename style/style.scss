@@ -26,9 +26,11 @@ body {
     // outline: 1px solid red;
     @media (max-width: 768px) {
     max-width: 736px;
+    margin: 0;
     }
     @media (max-width: 425px) {
     max-width: 359px;
+    margin: 0;
     }
   }
 .header {

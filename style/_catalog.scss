@@ -113,3 +113,20 @@
         }
     }
 }
+.catalog_wrap {
+    display: grid;
+    gap: 16px;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        > :last-child {
+            display: none;
+        }
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        > :last-child {
+            display: block;
+        }
+    }
+}
